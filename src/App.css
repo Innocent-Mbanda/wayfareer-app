@@ -172,4 +172,8 @@ body{
   
  }
 
+ .viewTrips{
+   height: 100vh;
+   background: #333;
+ }
  
