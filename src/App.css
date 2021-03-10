@@ -11,7 +11,7 @@ body{
 .FormContainer{
   margin-top: 100px;
   display: flex; 
-   justify-content: center; 
+  justify-content: center; 
 
 }
 
@@ -173,7 +173,6 @@ body{
  }
 
  .viewTrips{
-   height: 100vh;
-   background: #333;
+
  }
  

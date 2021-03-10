@@ -2,6 +2,7 @@ import react from "react";
 import ButtonBox from "./Components/ButtonBox";
 import Login from "./Containers/Login";
 import "./App.css";
+import "./assets/styles/style.css"
 import Register from "./Containers/Register";
 import CreatTrip from "./Containers/CreatTrip";
 import { Route, Link, Switch, BrowserRouter as Router } from "react-router-dom";
