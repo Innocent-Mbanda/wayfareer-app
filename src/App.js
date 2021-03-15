@@ -38,7 +38,7 @@ function App() {
                 <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to="/SelectTrip">Select Trip</Link>
+                <Link to="/SelectTrip">Creat Trip</Link>
               </li>
               <li>
                 <Link to="/ViewTrips">ViewTrips</Link>

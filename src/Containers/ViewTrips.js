@@ -45,6 +45,30 @@ const ViewTrips = () => {
   });
  
 
+  const searchTrip=(e)=>{
+
+  const querry = e.target.value
+   const userSearch =tripData.filter((item)=>{
+     const searchFor =querry.toUpperCase()
+     const searchFromDeparture =item.depature.toUpperCase()
+      const searchFromDestination =item.destination.toUpperCase()
+    return (searchFromDeparture.includes(searchFor) ||
+           searchFromDestination.includes(searchFor)
+
+    
+           
+    )
+    
+    
+
+    
+
+            
+  })
+   
+   setTrip(userSearch)
+   console.log('****' , userSearch)
+  }
   const updateUserTrip = (tripid) => {
   
     const copyofArrays = trip.filter((item) => {
@@ -113,6 +137,7 @@ const ViewTrips = () => {
         <SelectBox onChange={handleChangeTo} name={initialPlacesTo} />
       </div>
       <ButtonBox onSubmit={updateTrips} name="Add" />
+      <input onChange={searchTrip} type="text"/>
       <table border="1">
         <thead>
           <tr>
@@ -162,11 +187,15 @@ const ViewTrips = () => {
                       </div>
                     </div>
                   )}
+                 
                   <button onClick={() => updateUserTrip(trip.id)}>
                     update
                   </button>
+                
                 </td>
+               
               </tr>
+              
             );
           })}
         </tbody>
