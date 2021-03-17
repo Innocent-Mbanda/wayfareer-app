@@ -38,7 +38,7 @@ function Register() {
         </div>
 
         <div className="bottonbox">
-        <ButtonBox onClick= {handleSubmit} name="Register" />
+        <ButtonBox className="input-button" onClick= {handleSubmit} name="Register" />
         </div>
         </form>
       </div>

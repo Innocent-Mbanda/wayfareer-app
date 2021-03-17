@@ -31,14 +31,14 @@ body{
   border-radius: 5px;
 }
 
-.Input-Button{
+.input-button{
   display: flex;
   justify-content: center;
   padding: 7px;
   margin: 30px;
   width: 300px;
 }
-.Input-Button button{
+.input-button button{
   background: #00B4D8;
   width: 130px;
   border: none;
@@ -47,6 +47,9 @@ body{
   font-size: 15px;
   width: 160px;
   border-radius: 5px;
+}
+.curved-boarder button{
+  border-radius: 40px;
 }
 .Login-Form{
   background: white;
@@ -121,7 +124,7 @@ body{
 .selectTrip{
   background: white;
   box-shadow: 4px 4px 4px argba(0,0,0,0.25);
-  width: 1000px;
+ width: 50%;
   height:auto;
   margin:  50px;
  
@@ -141,8 +144,9 @@ body{
 .boxes{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 60px;
+ 
 }
 .boxes h2{
   font-size: 18px;
@@ -150,26 +154,22 @@ body{
   
 }
 
-.box2{
- margin-left: 15%;
+.container-100{
+  width: 100%;
 }
-.box3{
-  margin-right: 15%;
- }
- 
-
- .img{
-  
-   position:relative;
-   right:50px;
- }
+.border-1{
+  border: 1px solid #333;
+}
+.container-60{
+  width: 60%;
+}
+.default-margin{
+  margin: 30px;
+}
 
  .submittingButton{
-  
-    display: flex;
-    justify-content: center;
-    margin-left: 27%;
-  
+   border-radius: 60px;
+
  }
 
  .viewTrips{

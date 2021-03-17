@@ -7,7 +7,7 @@ const SelectTrip =(props)=>{
 
     return(
         <div>
-  <select onChange={props.onChange}>
+  <select className={props.className} onChange={props.onChange}>
   <option disabled selected value="">select</option>
   {props.name.map((option)=>{
       return(
